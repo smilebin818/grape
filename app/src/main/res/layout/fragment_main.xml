@@ -9,9 +9,53 @@
     tools:context="com.yan.co.grape.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
+<!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="今日动态"
+        android:id="@+id/dynamic"
+        android:layout_marginTop="46dp"
+        android:textColor="#3c55a8"
+        android:allowUndo="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="产品管理"
+        android:id="@+id/button2"
+        android:layout_marginTop="44dp"
+        android:textColor="#3c55a8"
+        android:layout_below="@+id/dynamic"
+        android:layout_alignStart="@+id/dynamic" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="客户管理"
+        android:id="@+id/button3"
+        android:layout_marginTop="44dp"
+        android:textColor="#3c55a8"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="查看评价"
+        android:id="@+id/button4"
+        android:layout_marginTop="44dp"
+        android:textColor="#3c55a8"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
 
 </RelativeLayout>
