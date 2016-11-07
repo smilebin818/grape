@@ -1,8 +1,7 @@
 package com.yan.co.grape;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -10,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,25 +19,49 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         // [今日动态]按钮取得
         final Button dynamic = (Button) findViewById(R.id.dynamic);
-
         // [今日动态]添加监听器：向【今日动态】画面进行迁移
         dynamic.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // 迁移动作
-                Log.e("","test");
-//                final TextView text = (TextView) findViewById(R.id.textView1);
-//                text.setText("OnClick. " + " ....");
+                Log.v("debug", "++++++++++++++++++++++++++++Test++++++++++++++:今日动态");
+                Intent intent = new Intent(MainActivity.this,Dynamic.class);
+
+                startActivity(intent);
+            }
+        });
+
+        // [产品管理]按钮取得
+        final Button productManagement = (Button) findViewById(R.id.productManagement);
+        // [产品管理]添加监听器：向【产品管理】画面进行迁移
+        productManagement.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // 迁移动作
+                Log.v("debug", "++++++++++++++++++++++++++++Test++++++++++++++:产品管理");
+
+            }
+        });
+
+        // [客户管理]按钮取得
+        final Button customerManagement = (Button) findViewById(R.id.customerManagement);
+        // [客户管理]添加监听器：向【客户管理】画面进行迁移
+        customerManagement.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // 迁移动作
+                Log.v("debug", "++++++++++++++++++++++++++++Test++++++++++++++:客户管理");
+
+            }
+        });
+
+        // [查看评价]按钮取得
+        final Button evaluate = (Button) findViewById(R.id.evaluate);
+        // [查看评价]添加监听器：向【查看评价】画面进行迁移
+        evaluate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // 迁移动作
+                Log.v("debug", "++++++++++++++++++++++++++++Test++++++++++++++:查看评价");
+
             }
         });
 

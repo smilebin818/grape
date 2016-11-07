@@ -32,30 +32,30 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="产品管理"
-        android:id="@+id/button2"
+        android:id="@+id/productManagement"
         android:layout_marginTop="44dp"
         android:textColor="#3c55a8"
         android:layout_below="@+id/dynamic"
-        android:layout_alignStart="@+id/dynamic" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="客户管理"
-        android:id="@+id/button3"
+        android:id="@+id/customerManagement"
         android:layout_marginTop="44dp"
         android:textColor="#3c55a8"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_below="@+id/productManagement"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="查看评价"
-        android:id="@+id/button4"
+        android:id="@+id/evaluate"
         android:layout_marginTop="44dp"
         android:textColor="#3c55a8"
-        android:layout_below="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_below="@+id/customerManagement"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
