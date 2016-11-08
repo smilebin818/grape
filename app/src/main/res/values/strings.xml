@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">grape</string>
     <string name="action_settings">Settings</string>
+
+    <!-- 画面上显示的值-->
+    <string name="news">今日动态</string>
+    <string name="productManagement">产品管理</string>
+    <string name="customerManagement">客户管理</string>
+    <string name="evaluate">查看评价</string>
 </resources>
