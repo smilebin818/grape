@@ -8,12 +8,12 @@ import android.view.MenuItem;
 /**
  * Created by yanbin on 2016/11/07.
  */
-public class Dynamic extends AppCompatActivity {
+public class NewsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dynamic);
+        setContentView(R.layout.news_main);
     }
 
     @Override

@@ -7,8 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="vertical"
-        android:background="@drawable/rim">
+        android:orientation="vertical">
 
         <Button
             android:layout_width="100dp"
@@ -20,17 +19,22 @@
             android:layout_gravity="right" />
     </LinearLayout>
 
+    <View
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:background="@drawable/rim">
+        android:layout_height="320dp">
 
         <ImageView
             android:id="@+id/ivLogo"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/ic_launcher"
-            android:paddingLeft="5dp" />
+            android:src="@mipmap/ic_launcher" />
 
         <RelativeLayout
             android:id="@+id/rl_name"
@@ -67,10 +71,16 @@
         </RelativeLayout>
     </LinearLayout>
 
+    <View
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/rim">
+        android:layout_height="match_parent">
 
         <!--<EditText-->
             <!--android:layout_width="fill_parent"-->

@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // [今日动态]按钮取得
-        final Button dynamic = (Button) findViewById(R.id.dynamic);
+        final Button news = (Button) findViewById(R.id.news);
         // [今日动态]添加监听器：向【今日动态】画面进行迁移
-        dynamic.setOnClickListener(new View.OnClickListener() {
+        news.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // 迁移动作
                 Log.v("debug", "++++++++++++++++++++++++++++Test++++++++++++++:今日动态");
-                Intent intent = new Intent(MainActivity.this,Dynamic.class);
+                Intent intent = new Intent(MainActivity.this,NewsActivity.class);
 
                 startActivity(intent);
             }
