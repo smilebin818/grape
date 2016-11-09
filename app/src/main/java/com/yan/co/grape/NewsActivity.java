@@ -2,7 +2,10 @@ package com.yan.co.grape;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.yan.co.grape.adapter.NewsListAdapter;
 
@@ -25,9 +28,23 @@ public class NewsActivity extends AppCompatActivity {
 
 //        productInfos = getProductInfo();
 
+        // added by zhanglintc
+        class ListItemClickListener implements AdapterView.OnItemClickListener
+        {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View view, int position, long id)
+            {
+                Toast.makeText(getApplicationContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
+            }
+        }
+
         NewsListAdapter newsList = new NewsListAdapter(this);
         ListView lv = (ListView)findViewById(R.id.testListView);
         lv.setAdapter(newsList);
+
+        // added by zhanglintc
+        lv.setOnItemClickListener(new ListItemClickListener());
 
     }
 
