@@ -2,6 +2,11 @@
     <string name="app_name">Grape</string>
     <string name="action_settings">Settings</string>
 
+    <string name="my_app">我的首页</string>
+    <string name="news_name">今日动态</string>
+    <string name="product_name">产品管理</string>
+    <string name="customer_name">客户管理</string>
+
     <!-- 画面上显示的值-->
     <string name="news">今日动态</string>
     <string name="productManagement">产品管理</string>

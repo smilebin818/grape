@@ -62,7 +62,7 @@
             android:layout_marginRight="5dp"
             android:inputType="textMultiLine"
             android:gravity="left|top"
-            android:minLines="4"
+            android:minLines="3"
             android:background="@drawable/editsharp"
             android:hint="请输入..."/>
 
