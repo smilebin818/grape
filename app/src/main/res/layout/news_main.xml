@@ -50,13 +50,31 @@
     <LinearLayout
         android:id="@+id/line3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <EditText
-            android:layout_width="fill_parent"
+            android:id="@+id/info"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
-            android:text="@+id/info"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:minLines="4"
+            android:background="@drawable/editsharp"
+            android:hint="请输入..."/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="保存"
+            android:textColor="#4188bf"
+            android:layout_gravity="right" />
+
     </LinearLayout>
 
 </LinearLayout>
