@@ -19,6 +19,7 @@
             android:id="@+id/productTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:singleLine="true"
             android:textSize="22sp"
             android:textColor="#212175" />
 
@@ -26,6 +27,7 @@
             android:id="@+id/productInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:singleLine="true"
             android:textSize="13sp"
             android:textColor="#1d749c" />
     </LinearLayout>

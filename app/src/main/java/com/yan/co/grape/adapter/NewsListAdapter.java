@@ -67,7 +67,7 @@ public class NewsListAdapter extends BaseAdapter {
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("title", "产品①");
-        map.put("info", "产品说明：XXXXXXXXXXXXXXXXXXXXXXXXXX");
+        map.put("info", "产品说明：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
         map.put("img", R.drawable.cute0);
         list.add(map);
 
