@@ -3,7 +3,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
 
     <LinearLayout
         android:gravity="center"
@@ -24,12 +25,15 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/productTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="0dp"
             android:singleLine="true"
             android:textSize="22sp"
             android:textColor="#212175" />
@@ -38,6 +42,8 @@
             android:id="@+id/productInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
             android:singleLine="true"
             android:textSize="13sp"
             android:textColor="#1d749c" />
